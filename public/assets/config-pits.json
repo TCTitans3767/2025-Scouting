@@ -14,31 +14,20 @@
           {
             "name": "Team Number",
             "type": "number"
+          },
+          {
+            "name": "Scouter Name",
+            "type": "text"
           }
+
         ]
       },
       {
         "name": "Robot",
         "widgets": [
           {
-            "name": "Height",
-            "type": "number"
-          },
-          {
-            "name": "Length",
-            "type": "number"
-          },
-          {
-            "name": "Width",
-            "type": "number"
-          },
-          {
-            "name": "Number of Batteries",
-            "type": "number"
-          },
-          {
-            "name": "Weight",
-            "type": "number"
+            "name": "Robot Size",
+            "type": "text"
           },
           {
             "name": "Drivetrain",
@@ -49,26 +38,6 @@
               "Butterfly",
               "Mecanum",
               "Other"
-            ]
-          },
-          {
-            "name": "Swerve Motor Type",
-            "type": "dropdown",
-            "options": [
-              "Neo",
-              "Falcon",
-              "Cim",
-              "Kraken"
-            ]
-          },
-          {
-            "name": "Swerve Type",
-            "type": "dropdown",
-            "options": [
-              "No swerve",
-              "Mk 4",
-              "Mk 4i",
-              "Custom"
             ]
           }
         ]
@@ -82,8 +51,8 @@
             "options": [
               "Ground Coral",
               "Ground Algae",
-              "Reef 2.5",
-              "Reef 3.5"
+              "Coral Station",
+              "Reef Algae"
             ]
           },
           {
@@ -99,52 +68,30 @@
             ]
           },
           {
-            "name": "Scoring Methods",
-            "type": "multicheckbox",
+            "name": "Can leave in Auto",
+            "type": "radio",
             "options": [
-              "Manual",
-              "Auto"
+              "Yes",
+              "No"
             ]
           },
           {
-            "name": "Preferred Pickup Location",
+            "name": "If no leave, do they want help?",
+            "type": "radio",
+            "options":[
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "name": "If they want help, what language do they program in?",
             "type": "dropdown",
-            "options": [
-              "Ground Coral",
-              "Ground Algae",
-              "Reef 2.5",
-              "Reef 3.5"
-            ],
-            "defaultOption": true
-          },
-          {
-            "name": "Preferred Scoring Location",
-            "type": "dropdown",
-            "options": [
-              "Trough",
-              "L2",
-              "L3",
-              "L4",
-              "Proccesor",
-              "Net"
-            ],
-            "defaultOption": true
-          },
-          {
-            "name": "Cycle Time Coral -> Reef",
-            "type": "number"
-          },
-          {
-            "name": "Cycle Time Algae -> Proccesor",
-            "type": "number"
-          },
-          {
-            "name": "Cycle Time Algae -> Net",
-            "type": "number"
-          },
-          {
-            "name": "Climb Time",
-            "type": "number"
+            "options":[
+              "C++",
+              "Java",
+              "Python",
+              "Other"
+            ]
           },
           {
             "name": "Comments",
